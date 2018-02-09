@@ -181,10 +181,10 @@
             </div>
             <div class="footer-right">
                <p class="title4">Напишите нам </p>
-               <a href="https:vk.com/vlad_besso">
-               <button class="footer-btn">Написать</button>
+               <a href="https:vk.me/vlad_besso">
+               <button class="footer-btn">Написать</button></a>
             </div>
-            </a>
+            
             </p>
          </div>
          </div>
@@ -237,33 +237,33 @@
       </div>
       <!-- JAVASCRIPT CODE -->
       <script>
-         new WOW().init();
-         
-         $(document).ready(function() {
-           $('.go_to').click(function() { // ловим клик по ссылке с классом go_to
-             var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
-             if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
-               $('html, body').animate({
+ new WOW().init();
+
+ $(document).ready(function() {
+     $('.go_to').click(function() { // ловим клик по ссылке с классом go_to
+         var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+         if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+             $('html, body').animate({
                  scrollTop: $(scroll_el).offset().top
-               }, 600); // анимируем скроолинг к элементу scroll_el
-             }
-             return false; // выключаем стандартное действие
-           });
-         
-           $(window).scroll(function() {
-             if ($(this).scrollTop() > 300) {
-               $('.scrollup').fadeIn();
-             } else {
-               $('.scrollup').fadeOut();
-             }
-           });
-           $('.scrollup').click(function() {
-             $("html, body").animate({
-               scrollTop: 0
-             }, 600);
-             return false;
-           });
-         });
+             }, 600); // анимируем скроолинг к элементу scroll_el
+         }
+         return false; // выключаем стандартное действие
+     });
+
+     $(window).scroll(function() {
+         if ($(this).scrollTop() > 300) {
+             $('.scrollup').fadeIn();
+         } else {
+             $('.scrollup').fadeOut();
+         }
+     });
+     $('.scrollup').click(function() {
+         $("html, body").animate({
+             scrollTop: 0
+         }, 600);
+         return false;
+     });
+ });
       </script>
    </body>
 </html>
