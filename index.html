@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <title>Taxi</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=latin-ext" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+      <script src="js/jquery-1.11.1.min.js"></script>
+      <script src="js/wow.min.js"></script>
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <div class="logo">
+               <p class="name-logo">Название</p>
+            </div>
+            <div class="header-menu">
+               <ul>
+                  <li><a href=".section3">Для водителей</a></li>
+                  <li><a href=".section2" class="go_to">Достоинства</a></li>
+                  <li><a href=".section1" class="go_to">Тарифы</a></li>
+                  <li><a href=".head" class="go_to">Главная</a></li>
+               </ul>
+            </div>
+         </div>
+         <section class="main">
+            <div class="container">
+               <div class="main-titles">
+                  <p class="main-title wow fadeIn" data-wow-delay="0.1s">
+                     Название
+                  </p>
+                  <p class="main-title2 wow fadeIn" data-wow-delay="0.2s">
+                     Сервис c лучшими водителями
+                  </p>
+               </div>
+            </div>
+         </section>
+      </header>
+      <a name="tariffs"></a>
+      <section class="section1">
+         <div class="container">
+            <p class="title wow fadeInUp">
+               НАШИ <span>ТАРИФЫ</span>
+            </p>
+            <div class="taxi-title">
+               <div class="taxi1">
+                  <img src="img/taxi.png" alt="Такси">
+                  <p class="taxi-class">
+                     Эконом
+                  </p>
+                  <p class="description">
+                     Автомобили Renault Logan, Daewoo Nexia, Chevrolet Lacetti
+                     <!-- 59р за 4 мин и 1 км, далее:
+                        3 р/мин и 12 р/км (до 15 км) -->
+                  </p>
+                  <p class="cost">
+                     <span>12р</span>/км
+                  </p>
+                  <a href="#openModal">
+                  <button class="taxi-btn wow wobble">Подробнее</button>
+                  </a>
+               </div>
+               <div class="taxi2">
+                  <img src="img/taxi.png" alt="Такси">
+                  <p class="taxi-class">
+                     Комфорт
+                  </p>
+                  <p class="description">
+                     Автомобили Skoda Rapid, Hyundai Solaris, Nissan Almera, Volkswagen Polo
+                  </p>
+                  <p class="cost">
+                     <span>15р</span>/км
+                  </p>
+                  <a href="#openModal2">
+                  <button class="taxi-btn wow wobble">Подробнее</button>
+                  </a>
+               </div>
+               <div class="taxi3">
+                  <img src="img/taxi.png" alt="Такси">
+                  <p class="taxi-class">
+                     Бизнес
+                  </p>
+                  <p class="description">
+                     Автомобили Nissan Teana, Toyota Camry, Volkswagen Tiguan
+                  </p>
+                  <p class="cost">
+                     <span>20р</span>/км
+                  </p>
+                  <a href="#openModal3">
+                  <button class="taxi-btn wow wobble">Подробнее</button>
+                  </a>
+               </div>
+            </div>
+      </section>
+      <section class="section2" id="sec2">
+      <a name="features"></a>
+      <div class="container">
+      <p class="title2 wow fadeInUp">
+      НАШИ <span>ДОСТОИНСТВА</span>
+      </p>
+      <div class="main2">
+      <div class="features1 wow bounceInDown" data-wow-delay="0.1s">
+      <img src="img/ach1.png" alt="Машина">
+      <p class="textach1">Лучшие водители</p>
+      </div>
+      <div class="features2 wow bounceInDown" data-wow-delay="0.2s">
+      <img src="img/ach2.png" alt="Машина">
+      <p class="textach2">Безопасность</p>
+      </div>
+      <div class="features3 wow bounceInDown" data-wow-delay="0.3s">
+      <img src="img/ach3.png" alt="Машина">
+      <p class="textach3">Удобная оплата</p>
+      </div>
+      <a href="#openModal4">
+      <button class="features-btn wow wobble pop" data-wow-delay="0.3s">Подробнее</button>
+      </a>
+      </div>
+      </div>
+      </div>
+      </section>
+      <section class="section3">
+         <div class="container">
+            <p class="title3 wow fadeInUp">
+               ДЛЯ <span>ВОДИТЕЛЕЙ</span>
+            </p>
+            <div class="driver-block">
+               <div class="driver1">
+                  <p class="description2 wow flipInX">
+                     Подключайтесь к сервису такси и получайте заказы без простоя и холостого пробега. Работа, в которой вы всегда на первом месте. Ваш график работы. Ваш личный заработок.
+                  </p>
+               </div>
+               <div class="driver-registration">
+                  <p class="driver-title">
+                     Начни работать с НАЗВАНИЕ
+                  </p>
+                  <img src="img/car.png" alt="Машина" class="img-car">
+                  <form action="#" method="post">
+                     <label for="name-field">Логин:</label>
+                     <br>
+                     <input type="text" name="login" id="name-field">
+                     <br>
+                     <label for="password-field"> Имя:</label>
+                     <br>
+                     <input type="text" name="secondname" id="secondname-field">
+                     <br>
+                     <label for="info-field">Информация о себе:</label>
+                     <br>
+                     <textarea name="comment" id="info-field" rows="3"></textarea>
+                     <br>
+                     <label for="password-field">Пароль:</label>
+                     <br>
+                     <input type="password" name="password" id="password-field">
+                     <br>
+                     <br>
+                     <input type="submit" method="post" value="Зарегистрироваться" class="reg-btn">
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="container">
+            <div class="footer-left">
+               <p class="title4">О НАС</p>
+               <p class="description3">
+                  НАЗВАНИЕ — сервис для вызова такси, построенный на простой идее: если лучше относиться к водителям, они лучше отнесутся к пассажирам.
+               </p>
+            </div>
+            <div class="footer-center">
+               <p class="title4">
+                  Контакты
+               </p>
+               <div class="subs">
+                  <a href="https://facebook.com/vlad_besso"><img src="img/social/facebook-logo-button.png" alt="facebook"></a>
+                  <a href="https://telegram.org"><img src="img/social/telegram-symbol.png" alt="telegram"></a>
+                  <a href="https://vk.com/vlad_besso"><img src="img/social/vk-social-logotype.png" alt="vkontakte"></a>
+               </div>
+            </div>
+            <div class="footer-right">
+               <p class="title4">Напишите нам </p>
+               <a href="https:vk.com/vlad_besso">
+               <button class="footer-btn">Написать</button>
+            </div>
+            </a>
+            </p>
+         </div>
+         </div>
+         </div>
+      </footer>
+      <a href="#" class="scrollup">Наверх</a>
+      <!-- Модальные окна -->
+      <div id="openModal" class="modalDialog">
+         <div>
+            <a href="#close" title="Закрыть" class="close">X</a>
+            <h2>Эконом</h2>
+            <p>5 минут ожидания включены, далее 7 ₽/минута Минимальная стоимость поездки 99 ₽.
+               <br> Стоимость поездки может быть увеличена в периоды повышенного спроса на услуги.
+            </p>
+         </div>
+      </div>
+      <div id="openModal2" class="modalDialog">
+         <div>
+            <a href="#close" title="Закрыть" class="close">X</a>
+            <h2>Комфорт</h2>
+            <p>10 минут ожидания включены, далее 7 ₽/минута Минимальная стоимость поездки 150 ₽.
+               <br> Стоимость поездки может быть увеличена в периоды повышенного спроса на услуги.
+            </p>
+         </div>
+      </div>
+      <div id="openModal3" class="modalDialog">
+         <div>
+            <a href="#close" title="Закрыть" class="close">X</a>
+            <h2>Бизнес</h2>
+            <p>15 минут ожидания включены, далее 7 ₽/минута Минимальная стоимость поездки 200 ₽.
+               <br> Стоимость поездки может быть увеличена в периоды повышенного спроса на услуги.
+            </p>
+         </div>
+      </div>
+      <div id="openModal4" class="modalDialog">
+         <div>
+            <a href="#close" title="Закрыть" class="close">X</a>
+            <h2>Лучшие водители</h2>
+            <p>Средний рейтинг наших водителей выше 4.7
+               <br>
+            </p>
+            <h2>Безопасность</h2>
+            <p>Такси от подъезда до подъезда. Водители со стажем от 5 лет
+               <br>
+            </p>
+            <h2>Удобная оплата</h2>
+            <p>Платите наличными или банковской картой</p>
+         </div>
+      </div>
+      </div>
+      <!-- JAVASCRIPT CODE -->
+      <script>
+         new WOW().init();
+         
+         $(document).ready(function() {
+           $('.go_to').click(function() { // ловим клик по ссылке с классом go_to
+             var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+             if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+               $('html, body').animate({
+                 scrollTop: $(scroll_el).offset().top
+               }, 600); // анимируем скроолинг к элементу scroll_el
+             }
+             return false; // выключаем стандартное действие
+           });
+         
+           $(window).scroll(function() {
+             if ($(this).scrollTop() > 300) {
+               $('.scrollup').fadeIn();
+             } else {
+               $('.scrollup').fadeOut();
+             }
+           });
+           $('.scrollup').click(function() {
+             $("html, body").animate({
+               scrollTop: 0
+             }, 600);
+             return false;
+           });
+         });
+      </script>
+   </body>
+</html>
