@@ -137,7 +137,7 @@
                      Начни работать с НАЗВАНИЕ
                   </p>
                   <img src="img/car.png" alt="Машина" class="img-car">
-                  <form action="#" method="post">
+                  <form action="driver.php" method="post">
                      <label for="name-field">Логин:</label>
                      <br>
                      <input type="text" name="login" id="name-field">
@@ -238,7 +238,7 @@
       <!-- JAVASCRIPT CODE -->
       <script>
  new WOW().init();
-
+//плавная перемотка к объекту
  $(document).ready(function() {
      $('.go_to').click(function() { // ловим клик по ссылке с классом go_to
          var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
@@ -250,19 +250,33 @@
          return false; // выключаем стандартное действие
      });
 
-     $(window).scroll(function() {
-         if ($(this).scrollTop() > 300) {
-             $('.scrollup').fadeIn();
-         } else {
+
+//пролистать сайт к шапке
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 300) {
+      $('.scrollup').fadeIn();
+    } else {
              $('.scrollup').fadeOut();
          }
      });
      $('.scrollup').click(function() {
-         $("html, body").animate({
-             scrollTop: 0
+       $("html, body").animate({
+          scrollTop: 0
          }, 600);
-         return false;
+     return false;
      });
+
+//модальное окно
+$(document).mouseleave(function(e){
+    if (e.clientY < 0) {
+        $(".openModal").fadeIn("fast");
+    }    
+});
+$(document).click(function(e) {
+    if (($(".openModal").is(':visible')) && (!$(e.target).closest(".openModal .modaltext").length)) {
+        $(".openModal").remove();
+    }
+});
  });
       </script>
    </body>
