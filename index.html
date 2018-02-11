@@ -137,7 +137,7 @@
                      Начни работать с НАЗВАНИЕ
                   </p>
                   <img src="img/car.png" alt="Машина" class="img-car">
-                  <form action="driver.php" method="post">
+                  <form method="POST" id="formx" action="javascript:void(null);" onsubmit="call()">
                      <label for="name-field">Логин:</label>
                      <br>
                      <input type="text" name="login" id="name-field">
@@ -155,7 +155,7 @@
                      <input type="password" name="password" id="password-field">
                      <br>
                      <br>
-                     <input type="submit" method="post" value="Зарегистрироваться" class="reg-btn">
+                     <input type="submit" method="POST" value="Зарегистрироваться" class="reg-btn">
                   </form>
                </div>
             </div>
@@ -279,5 +279,23 @@ $(document).click(function(e) {
 });
  });
       </script>
+
+      <script type="text/javascript" language="javascript">
+   function call() {
+     var msg   = $('#formx').serialize();
+        $.ajax({
+          type: 'POST',
+          url: 'res.php',
+          data: msg,
+          success: function(data) {
+            $('#results').html(data);
+          },
+          error:  function(xhr, str){
+       alert('Возникла ошибка: ' + xhr.responseCode);
+          }
+        });
+ 
+    }
+</script>
    </body>
 </html>
